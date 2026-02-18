@@ -6,7 +6,7 @@ export const DATA = {
   location: "São Paulo, Brazil",
   resumeUrl: "/resume-dataAnalyst.pdf",
   social: {
-    github: "",
+    github: "https://github.com/pLievore",
     linkedin: "https://www.linkedin.com/in/paulo-lievore-leoni-b29ba91a3",
     twitter: "",
     youtube: "",
@@ -50,7 +50,7 @@ export const DATA = {
     {
       company: "São Camilo Hospital",
       role: "Data Analyst Assistant",
-      period: "January 2021 – July 2021",
+      period: "January 2020 – June 2022 | Paraná, Brazil",
       description: "Developed clinical dashboards for hospital operations. SQL data extraction and transformation. IT process improvement initiatives. Clinical data preparation for healthcare teams.",
     },
   ],
