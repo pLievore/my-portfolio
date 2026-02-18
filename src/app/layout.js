@@ -77,6 +77,7 @@ export default function RootLayout({ children }) {
         {children}
         <Toaster position="top-center" richColors />
         <SmoothScroll />
+        <Analytics />
       </body>
     </html>
   );
