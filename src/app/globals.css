@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-400: #ffbf46;
+  --color-gold-500: #f5a623;
+  --color-teal-400: #66ced6;
+  --color-teal-500: #4db6be;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --background: #09090b;
+  /* zinc-950 */
+  --foreground: #fafafa;
+  /* zinc-50 */
+
+  --card: #18181b;
+  /* zinc-900 */
+  --card-foreground: #fafafa;
+
+  --primary: #ffbf46;
+  /* Gold */
+  --primary-foreground: #09090b;
+
+  --secondary: #27272a;
+  /* zinc-800 */
+  --secondary-foreground: #fafafa;
+
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+
+  --border: #27272a;
+  --input: #27272a;
+  --ring: #ffbf46;
+}
+
+
+
+body {
+  background: radial-gradient(circle at 50% 0%, #1a1a1e 0%, var(--background) 100%);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 5px;
+  border: 2px solid var(--background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-500);
+}
