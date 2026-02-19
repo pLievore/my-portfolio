@@ -77,12 +77,14 @@ function ExperienceItem({ title, subtitle, subtitleContext, date, description, d
         >
             <div className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-zinc-900 border-2 border-primary" />
             <div className="bg-zinc-900/50 p-6 rounded-xl border border-white/5 hover:border-white/10 transition-colors relative">
-                {isCurrent && (
-                    <span className="absolute top-4 right-4 px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-medium border border-emerald-500/30">
-                        Current
-                    </span>
-                )}
-                <span className="text-sm text-primary mb-2 block font-mono">{date}</span>
+                <div className="flex items-start justify-between gap-2 mb-2">
+                    <span className="text-sm text-primary block font-mono">{date}</span>
+                    {isCurrent && (
+                        <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-medium border border-emerald-500/30 flex-shrink-0">
+                            Current
+                        </span>
+                    )}
+                </div>
                 <h4 className="text-lg font-bold text-white mb-1">{title}</h4>
                 <p className="text-zinc-400 text-sm mb-2">{subtitle}</p>
                 {subtitleContext && <p className="text-zinc-500 text-xs mb-2 italic">{subtitleContext}</p>}
