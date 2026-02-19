@@ -61,12 +61,15 @@ export default function Contact() {
                         <h3 className="text-2xl font-semibold text-white">Contact Information</h3>
                         <p className="text-sm text-zinc-500">Best way to reach me: LinkedIn or email. I typically reply within 24–48 hours.</p>
 
-                        <a href={`mailto:${DATA.email}`} className="flex items-start gap-4 group cursor-pointer">
-                            <span className="block">
+                        <a href={`mailto:${DATA.email}`} className="flex items-center gap-4 group cursor-pointer">
+                            <div className="p-3 bg-zinc-900 border border-white/5 rounded-full text-primary flex-shrink-0">
+                                <Mail className="w-5 h-5" />
+                            </div>
+                            <div>
                                 <h4 className="font-medium text-white mb-1 group-hover:text-primary transition-colors">Email</h4>
-                                <span className="text-lg text-white font-medium block">{DATA.email}</span>
+                                <span className="text-zinc-400">{DATA.email}</span>
                                 <span className="text-xs text-primary mt-1 opacity-0 group-hover:opacity-100 transition-opacity block">Click to open Gmail</span>
-                            </span>
+                            </div>
                         </a>
 
                         {DATA.phone && (

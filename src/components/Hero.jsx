@@ -55,7 +55,7 @@ export default function Hero() {
                     <div className="flex items-center gap-4 pt-4">
                         <a
                             href="#contact"
-                            className="px-8 py-3 bg-primary text-black font-semibold rounded-full hover:bg-orange-500 transition-colors flex items-center gap-2 group"
+                            className="px-8 py-3 bg-[#ffbf46] text-black font-semibold rounded-full hover:bg-orange-500 transition-colors flex items-center gap-2 group shadow-lg hover:shadow-orange-500/50 relative z-10"
                         >
                             Contact Me
                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -81,7 +81,7 @@ export default function Hero() {
                             </a>
                             <a
                                 href="#contact"
-                                className="px-3 border border-white/10 rounded-full hover:bg-white/5 hover:text-white hover:border-white/20 transition-all text-zinc-400"
+                                className="p-3 border border-white/10 rounded-full hover:bg-white/5 hover:text-white hover:border-white/20 transition-all text-zinc-400"
                             >
                                 <Mail className="w-5 h-5" />
                             </a>
