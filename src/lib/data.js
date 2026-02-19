@@ -44,13 +44,13 @@ export const DATA = {
     {
       company: "Unimed Ponta Grossa",
       role: "Data Analyst",
-      period: "June 2022 – June 2024 | Paraná, Brazil",
+      period: "June 2021 – June 2024 | Paraná, Brazil",
       description: "Built the complete Data Warehouse architecture from scratch. Designed and implemented ETL pipelines using Python, SQL, and Airflow. Developed advanced PL/SQL procedures, functions, tables, and views. Delivered enterprise BI performance indicators. Applied Scrum methodology in project execution.",
     },
     {
       company: "São Camilo Hospital",
       role: "Data Analyst Assistant",
-      period: "January 2020 – June 2022 | Paraná, Brazil",
+      period: "January 2020 – June 2021 | Paraná, Brazil",
       description: "Developed clinical dashboards for hospital operations. SQL data extraction and transformation. IT process improvement initiatives. Clinical data preparation for healthcare teams.",
     },
   ],
